@@ -14,7 +14,7 @@ public class TemperatuurStatusBisApplicatie {
 			schaal = voerSchaalIn();
 			String resultaat = geefTemperatuurStatus(temperatuur, schaal);
 			System.out.printf("%d graden %s voelt aan als %s%n%n", temperatuur,
-					schaal == 'C' ? "Celcius" : "Fahrenheit",resultaat);
+					schaal == 'C' ? "Celsius" : "Fahrenheit",resultaat);
 			temperatuur = voerTemperatuurIn();
 		}
 	}
@@ -37,7 +37,7 @@ public class TemperatuurStatusBisApplicatie {
 	private char voerSchaalIn() {
 		int schaal;
 		do {
-			System.out.print("Geef de schaal - Celcius of Fahrenheit (C=1 of F=2): ");
+			System.out.print("Geef de schaal - Celsius of Fahrenheit (C=1 of F=2): ");
 			schaal = invoer.nextInt();
 		} while (schaal != 1 && schaal != 2);
 		return schaal == 1 ? 'C' : 'F';
